@@ -94,14 +94,14 @@ class logs_prep():
         """
         Input DF
         Will convert logs from format
-        type_code       |   reason						    |   up_name             |   created_at
-        1.11.111.111    |   Quality log: Voltage L2 resume	|   12EEE-12345678-1	|   2019-04-03 07:42:23+03:00
-        1.11.222.111    |   Quality log: Undervoltage L2	|   12EEE-12345678-1	|   2019-04-03 08:03:18+03:00
-        2.11.111.111    |   Quality log: Undervoltage L1	|   12EEE-12345678-1	|   2019-04-03 02:58:23+03:00
+        event_id        |   event               |   device_name         |   date
+        1.11.111.111    |   Voltage L2 resume   |   12EEE-12345678-1	|   2019-04-03 07:42:23+03:00
+        1.11.222.111    |   Undervoltage L2     |   12EEE-12345678-1	|   2019-04-03 08:03:18+03:00
+        2.11.111.111    |   Undervoltage L1     |   12EEE-12345678-1	|   2019-04-03 02:58:23+03:00
 
         Ouput DF
         to (grouped by day and eic and summurize number of particular events of each type in logs)
-        device_name			|   created_at	|   1.11.111.111    |   1.11.222.111	|   2.11.111.111
+        device_name			|   date        |   1.11.111.111    |   1.11.222.111	|   2.11.111.111
         12EEE-12345678-1	|   2019-04-03	|   10              |   12              |   58
 
         Input: 
