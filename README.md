@@ -44,23 +44,23 @@ Electrical substations outage predictions by logs
 		Changing mode, dir structure, fields and columns names in config file
 ----------------------------------------------------------------------------------------------------------------------
 	Directories structure:
-	./                          # root directory
-	.config.py                  # config for current run
-	.init.py                    # initialization, start script
-	.README						# Current info file 
-	./requirements.txt			# Required for running solution modules. Should be installed automatically inside scripts
-	|-> dict/                   # dictionaries
-	|-> logs/                   # logs file/s - put here log file/s you want to predict outages for
-	    |->     events_01-2018_v1.csv                       # log file
-	|-> logs_preprocessing/     # logs preparation methods
-	    |->     preproc.py                       # class with methods same for both Train and Prod
-	|-> model/                  # trained model for prediction
-	    |->     finalized_outages_model.sav                 # model
-	    |->     finalized_outages_model_columns.csv         # columns names for model
-	|-> prototype_production/   # live related methods
-	|-> tmp/                    # directory to save intermediate results if flag is set to save feather
-	    |->     logs/           # will save here log file/s created at intermediaries steps
-	|-> train/                  # train related methods
+	./				# root directory
+	.config.py			# config for current run
+	.init.py			# initialization, start script
+	.README				# Current info file 
+	./requirements.txt		# Required for running solution modules. Should be installed automatically inside scripts
+	|-> dict/			# dictionaries
+	|-> logs/			# logs file/s - put here log file/s you want to predict outages for
+	    |->     events_01-2018_v1.csv		# log file
+	|-> logs_preprocessing/		# logs preparation methods
+	    |->     preproc.py				# class with methods same for both Train and Prod
+	|-> model/			# trained model for prediction
+	    |->     finalized_outages_model.sav		# model
+	    |->     finalized_outages_model_columns.csv	# columns names for model
+	|-> prototype_production/	# live related methods
+	|-> tmp/			# directory to save intermediate results if flag is set to save feather
+	    |->     logs/		# will save here log file/s created at intermediaries steps
+	|-> train/			# train related methods
 ----------------------------------------------------------------------------------------------------------------------
 	Description of solution Step by Step
 	You can start from any step and you can skip steps
